@@ -1,12 +1,9 @@
 # Import necessary libraries
 import os  # For environment variable access
-from typing import Annotated  # For type annotations
-
 from langchain_openai import ChatOpenAI  # OpenAI's chat model interface
 from langgraph.prebuilt import (
     create_react_agent,
 )  # Pre-built ReAct agent implementation
-from loguru import logger  # For logging
 from universal_mcp.tools.adapters import ToolFormat  # Tool format definitions
 from universal_mcp.tools.manager import ToolManager  # Tool management system
 from universal_mcp.applications import app_from_slug
